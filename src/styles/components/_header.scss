@@ -1,0 +1,57 @@
+@import '../animation/header-animation';
+
+.header {
+    background: linear-gradient(108deg, rgba(0, 36, 73, 1) 0%, rgba(1, 15, 53, 1) 48%, rgba(0, 0, 0, 1) 100%);
+    height: 300px;
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #EAD8C6;
+
+    &__logo-container {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 40px;
+        left: 49%;
+        transform: translate(-50%);
+        border-radius: 100px;
+        &--pulsing{
+            box-shadow: 0 0 0 rgba(255, 255, 255, 1);
+            animation: pulse 2.4s linear infinite;
+        }
+    }
+
+    &__logo-img {
+        width: 110%;
+        height: 110%;
+        margin-left: -8px;
+        margin-top: -4px;
+    }
+
+    &__navigation {
+        padding: 140px;
+
+        &__element {
+            transition: 0.2s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__navigation-container {
+        color: #EAD8C6;
+        @include horizontalFlex;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 24px;
+    }
+}
+
+
+
+.nav--active {
+    text-decoration: underline;
+}

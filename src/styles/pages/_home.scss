@@ -1,0 +1,19 @@
+@import "../animation/home-animation";
+
+.home-main{
+    @include verticalFlex;
+    &__title-container{
+        height: 140px;
+        width: 60%;
+        justify-self: center;
+        align-self: center;
+        margin-top: 60px;
+
+    }   
+    &__title{
+        font-size: 52px;
+        text-align: center;
+        color: #EAD8C6;
+        animation: title-fade-in 0.6s ease-in forwards;
+    }
+}

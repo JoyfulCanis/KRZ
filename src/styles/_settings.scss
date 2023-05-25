@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: "main-font";
+    src: url(../assets/fonts/Orbitron-Regular.ttf);
+}
+
+
+@mixin verticalFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin horizontalFlex{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+//?-----------------------------General-Config--------------------
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(108deg, rgba(0,36,73,1) 0%, rgba(1,15,53,1) 48%, rgba(0,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+
+    font-family: "main-font";
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
