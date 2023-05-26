@@ -1,5 +1,5 @@
 @import "../animation/home-animation";
-
+@import "../components/planet-audio";
 .home-main{
     @include verticalFlex;
     &__title-container{
