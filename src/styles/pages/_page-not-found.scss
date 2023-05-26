@@ -1,0 +1,57 @@
+@import "../animation/page-not-found-animation";
+
+.not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    &__title-container{
+        text-align: center;
+        margin-top: 40px;
+        position: relative;
+        height: 180px;
+        width: 400px;
+        
+    }
+
+    &__pretitle{
+        position: absolute;
+        font-size: 20px;
+        animation: fade-in-404-pretitle 0.6s forwards ease-in;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    &__title{
+        position: absolute;
+        font-size: 140px;
+        animation: fade-in-404-title 0.8s forwards ease-in;
+        left: 50%;
+        transform: translate(-50%);
+        padding-top: 20px;
+    }
+
+    &__img-container{
+        margin-top:80px;
+        margin-bottom: 140px;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(207, 214, 227, 0.542) 0%, rgba(17, 71, 172, 0.718) 86%);
+        position: relative;
+        box-shadow: 14px 14px 0px 0px rgba(0, 0, 0, 0.3);
+
+    }
+    &__img{
+        position: absolute;
+        width: 100px;
+        top:-100px;
+        left:-200px;
+        animation: lost 20s infinite;
+    }
+
+    &__homelink{
+        margin-bottom: 120px;
+    }
+}

@@ -3,17 +3,44 @@
 .home-main{
     @include verticalFlex;
     &__title-container{
-        height: 140px;
-        width: 60%;
+        width: 54%;
+        border-radius: 18px 0px 18px 0px ;
         justify-self: center;
         align-self: center;
         margin-top: 60px;
-
+        background: linear-gradient(0deg, rgba(255,192,203,0.2) 0%, rgba(45,112,253,0.2) 100%);
+        box-shadow: 12px 12px 12px 12px rgba(0, 0, 0, 0.444);
+        margin-bottom: 100px;
+        
     }   
-    &__title{
-        font-size: 52px;
+    &__main-title{
+        font-size: 40px;
         text-align: center;
-        color: #EAD8C6;
-        animation: title-fade-in 0.6s ease-in forwards;
+        padding: 12px;
+        font-weight: 400;
+        animation: title-fade-in 0.6s  forwards;
+        @include mobile-only{
+            font-size: 26px;
+        }
     }
+
+    &__main-text{
+        font-family:"text-regular";
+        font-weight: 400;
+        padding: 20px;
+        border-radius: 18px 0px 18px 0px;
+        background:rgba(128, 128, 128, 0.484);
+        text-align: center;
+    }
+
+    &__planet {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #FFDD00, #FF7600);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+        margin: 0 auto;
+        margin-bottom: 100px;
+      }
+      
 }

@@ -1,9 +1,11 @@
 @keyframes title-fade-in {
-    0%{
+    0% {
         opacity: 0;
+        margin-right: -200px;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
-    
+
 }

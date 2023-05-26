@@ -1,0 +1,37 @@
+.footer{
+    @include verticalFlex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background: black;
+    &__title{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    &__garageband-logo{
+        height: 30px;
+
+    }
+
+    &__icons-container{
+        @include horizontalFlex;
+        width: 220px;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 10px;
+        &__icon{
+            width: 28px;
+            padding: 4px;
+            transition: 0.1s ease-in;
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+    }
+
+    &__credits{
+        margin-top: 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+}
