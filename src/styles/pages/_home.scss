@@ -2,7 +2,7 @@
 @import "../components/planet-audio";
 .home-main{
     @include verticalFlex;
-    &__title-container{
+    &__title-and-text-container{
         width: 54%;
         border-radius: 18px 0px 18px 0px ;
         justify-self: center;
@@ -13,12 +13,17 @@
         margin-bottom: 100px;
         
     }   
+    &__title-container{
+        margin: 0;
+        animation: title-fade-in 1s  forwards;
+        
+    }
     &__main-title{
         font-size: 40px;
         text-align: center;
         padding: 12px;
         font-weight: 400;
-        animation: title-fade-in 0.6s  forwards;
+        
         @include mobile-only{
             font-size: 26px;
         }

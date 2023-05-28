@@ -1,0 +1,17 @@
+@keyframes submit-btn {
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+@keyframes title-fade-in-contact {
+    0% {
+        opacity: 0;
+        margin-bottom: -200px;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

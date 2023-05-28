@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Routes from './components/Routes';
+import Routes from './Routes';
 
 import './styles/index.scss';
 

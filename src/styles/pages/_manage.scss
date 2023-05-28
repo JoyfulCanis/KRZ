@@ -1,0 +1,16 @@
+.warning {
+    text-align: center;
+    margin-top: 10px;
+    color: #ff3e3e;
+}
+
+.submit-log {
+    background: #ff3e3e;
+}
+
+.manage__title {
+    @include title-box;
+    text-align: center;
+    padding: 8px;
+    font-weight: 400;
+}

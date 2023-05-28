@@ -1,0 +1,81 @@
+@import "../animation/contact-animation";
+
+.contact {
+    @include verticalFlex;
+    align-items: center;
+    margin-bottom: 80px;
+
+    &__container {
+        background: rgba(128, 128, 128, 0.484);
+        @include verticalFlex;
+        border-radius: 18px 0px 18px 0px;
+        width: 50%;
+        animation: title-fade-in-contact 0.6s ease-in forwards;
+    }
+
+
+    margin-top: 60px;
+
+    &__title {
+        @include title-box;
+        text-align: center;
+        padding: 12px;
+        font-weight: 400;
+        font-size: 32px
+    }
+
+    &__form {
+        @include verticalFlex;
+        align-items: center;
+        padding: 18px;
+    }
+
+    &__id-box,
+    &__msg-box {
+        @include verticalFlex;
+        width: 100%;
+    }
+
+    &__name,
+    &__mail {
+        width: 60%;
+        border-radius: 8px;
+        padding: 2px 6px;
+
+        &:focus {
+            border: 2px solid #b27fff;
+        }
+    }
+
+    &__message {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100px;
+        height: auto;
+        border-radius: 12px;
+        padding: 2px 6px;
+
+
+        &:focus {
+            border: 2px solid #b27fff;
+        }
+
+    }
+
+    &__submit {
+        background: linear-gradient(0deg, rgba(178, 127, 255, 1) 0%, rgba(45, 112, 253, 0.2) 100%);
+        border: none;
+        color: #ffff;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 8px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: 0.2ms;
+        box-shadow: 10px 8px 2px 0px #0e0a1437;
+
+        &:hover {
+            animation: submit-btn 0.1s forwards ease-in;
+        }
+    }
+}
